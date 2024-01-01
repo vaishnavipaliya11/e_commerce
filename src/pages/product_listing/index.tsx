@@ -1,6 +1,4 @@
-import { useSelector } from "react-redux";
 import { Card, Header } from "../../components";
-import { RootState } from "../../store/store";
 import { useEffect } from "react";
 import { getProducts } from "../../features/product/helpers/getProducts";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";

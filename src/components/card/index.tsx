@@ -29,6 +29,8 @@ export const Card = ({
   const { cartItems } = useAppSelector((store) => store.cart);
 
   const prodNameInCart = cartItems?.map((product) => product?.name);
+  console.log(isPresentInCart);
+  
 
   return (
     <div className="lg:w-1/4 md:w-1/2 p-4 w-full">

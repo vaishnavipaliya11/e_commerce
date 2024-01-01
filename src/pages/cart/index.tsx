@@ -1,6 +1,5 @@
-import { useSelector } from "react-redux";
 import { CartCard, Header } from "../../components";
-import { RootState } from "../../store/store";
+
 import { Link, useNavigate } from "react-router-dom";
 import { toIndianCurrency } from "../../utils";
 import { CartItemType } from "../../types/product";
@@ -47,6 +46,8 @@ export const Cart = () => {
       image: "/favicon.ico",
       handler: function (response: any) {
         const paymentId = response.razorpay_payment_id;
+        console.log(paymentId);
+        
         navigate("/");
       },
 
